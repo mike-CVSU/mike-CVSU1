@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Online Calculator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+		<form name="form1">
+		<input class="textview" name="textview" >
+		</form>
+		<div class="format">
+		<table>
+		<tr>
+			<td><input class="btn bg-warning" type="button" value="+" onclick="input('+')"></td>
+			<td><input class="btn" type="button" value="7" onclick="input(7)"></td>
+			<td><input class="btn" type="button" value="8" onclick="input(8)"></td>
+			<td><input class="btn" type="button" value="9" onclick="input(9)"></td>
+		</tr>
+		<tr>
+			<td><input class="btn bg-warning" type="button" value="-" onclick="input('-')"></td>
+			<td><input class="btn" type="button" value="4" onclick="input(4)"></td>
+			<td><input class="btn" type="button" value="5" onclick="input(5)"></td>
+			<td><input class="btn" type="button" value="6" onclick="input(6)"></td>
+		</tr>
+		<tr>
+			<td><input class="btn bg-warning" type="button" value="*" onclick="input('*')"></td>
+			<td><input class="btn" type="button" value="1" onclick="input(1)"></td>
+			<td><input class="btn" type="button" value="2" onclick="input(2)"></td>
+			<td><input class="btn" type="button" value="3" onclick="input(3)"></td>
+		</tr>
+		<tr>
+			<td><input class="btn bg-warning" type="button" value="/" onclick="input('/')"></td>
+			<td><input class="btn" type="button" value="0" onclick="input(0)"></td>
+			<td><input class="btn" type="button" value="." onclick="input('.')"></td>
+			<td><input class="btn" type="button" value="=" onclick="equal()"></td>
+		</tr>
+		<tr>
+			<td><input class="btn bg-warning" type="button" value="c" onclick="form1.textview.value=' '"></td>
+			
+		</tr>	
+		</table>
+		</div>
+</body>
+<script src="index.js"></script>
+</html>
