@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fibonacci Sequence</title>
+<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+</body>
+<script>
+
+window.onload = function writeFB(){
+	let array = [];
+	let num = prompt("Input a Number: ");
+	let a = 0;
+	let b = 1;
+	let sum = 0;
+
+	if (isNaN(num) || !Number.isInteger(parseFloat(num))) {
+		alert("Error!! Please input a valid integer!!");
+		writeFB();
+	} else if (num < 1 || num > 100) {
+		alert("Error!! Please input a number between 1 and 100!!");
+		writeFB();
+	} else {
+		// Convert input to integer
+		num = parseInt(num);
+		array.push(a);
+		array.push(b);
+		// Check Fibonacci sequence until it exceeds num
+		while (sum <= num) {
+			sum = a + b;
+			a = b;
+			b = sum;
+			if (sum <= num) {
+				array.push(sum);
+			}
+		}
+		alert(array);
+	}
+
+}
+
+
+
+</script>
+</html>
